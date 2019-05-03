@@ -575,7 +575,7 @@ def do_ned(doc_id, input_dir, output_dir, matcher):
 
     # iterate through all entities
     for entity_id in doc['entities']:
-        if int(entity_id) not in entity2relations:
+        if entity_id not in entity2relations:
             continue
 
         entity = doc['entities'][entity_id]
