@@ -605,7 +605,7 @@ def do_ned(doc_id, input_dir, output_dir, matcher):
                 ))
 
         else:
-            rel_id = entity2relations[int(entity_id)]
+            rel_id = entity2relations[entity_id]
             arg1, arg2 = relations[rel_id]
             scope = entities[str(arg2)]['surface']
             try:
